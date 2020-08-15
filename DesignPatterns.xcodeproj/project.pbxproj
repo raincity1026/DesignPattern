@@ -17,6 +17,9 @@
 		95E7248924E6F2210018EADD /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E7248824E6F2210018EADD /* NSString+MD5.m */; };
 		95E7249124E6F40F0018EADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E7249024E6F40F0018EADD /* main.m */; };
 		95E7249D24E6FB3C0018EADD /* DPWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E7249C24E6FB3C0018EADD /* DPWeakProxy.m */; };
+		95E724D124E8293D0018EADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E724D024E8293D0018EADD /* main.m */; };
+		95E724D724E82D6F0018EADD /* DPPlayerStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E724D624E82D6F0018EADD /* DPPlayerStrategy.m */; };
+		95E724DA24E82DC60018EADD /* DPPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E724D924E82DC60018EADD /* DPPlayerController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +59,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		95E724CC24E8293D0018EADD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +92,12 @@
 		95E7249024E6F40F0018EADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95E7249B24E6FB3C0018EADD /* DPWeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPWeakProxy.h; sourceTree = "<group>"; };
 		95E7249C24E6FB3C0018EADD /* DPWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPWeakProxy.m; sourceTree = "<group>"; };
+		95E724CE24E8293D0018EADD /* strategy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = strategy; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E724D024E8293D0018EADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95E724D524E82D6F0018EADD /* DPPlayerStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPlayerStrategy.h; sourceTree = "<group>"; };
+		95E724D624E82D6F0018EADD /* DPPlayerStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPlayerStrategy.m; sourceTree = "<group>"; };
+		95E724D824E82DC60018EADD /* DPPlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPlayerController.h; sourceTree = "<group>"; };
+		95E724D924E82DC60018EADD /* DPPlayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPlayerController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +129,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95E724CB24E8293D0018EADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -121,6 +146,7 @@
 				955D187524E6CC9D007888EF /* simple-factory */,
 				95E7247724E6DBF30018EADD /* decorator */,
 				95E7248F24E6F40F0018EADD /* proxy */,
+				95E724CF24E8293D0018EADD /* strategy */,
 				955D186724E6CC70007888EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,6 +158,7 @@
 				955D187424E6CC9D007888EF /* simple-factory */,
 				95E7247624E6DBF30018EADD /* decorator */,
 				95E7248E24E6F40F0018EADD /* proxy */,
+				95E724CE24E8293D0018EADD /* strategy */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,6 +206,18 @@
 				95E7249C24E6FB3C0018EADD /* DPWeakProxy.m */,
 			);
 			path = proxy;
+			sourceTree = "<group>";
+		};
+		95E724CF24E8293D0018EADD /* strategy */ = {
+			isa = PBXGroup;
+			children = (
+				95E724D024E8293D0018EADD /* main.m */,
+				95E724D524E82D6F0018EADD /* DPPlayerStrategy.h */,
+				95E724D624E82D6F0018EADD /* DPPlayerStrategy.m */,
+				95E724D824E82DC60018EADD /* DPPlayerController.h */,
+				95E724D924E82DC60018EADD /* DPPlayerController.m */,
+			);
+			path = strategy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +291,23 @@
 			productReference = 95E7248E24E6F40F0018EADD /* proxy */;
 			productType = "com.apple.product-type.tool";
 		};
+		95E724CD24E8293D0018EADD /* strategy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95E724D424E8293D0018EADD /* Build configuration list for PBXNativeTarget "strategy" */;
+			buildPhases = (
+				95E724CA24E8293D0018EADD /* Sources */,
+				95E724CB24E8293D0018EADD /* Frameworks */,
+				95E724CC24E8293D0018EADD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = strategy;
+			productName = strategy;
+			productReference = 95E724CE24E8293D0018EADD /* strategy */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,6 +329,9 @@
 					95E7248D24E6F40F0018EADD = {
 						CreatedOnToolsVersion = 11.6;
 					};
+					95E724CD24E8293D0018EADD = {
+						CreatedOnToolsVersion = 11.6;
+					};
 				};
 			};
 			buildConfigurationList = 955D186124E6CC70007888EF /* Build configuration list for PBXProject "DesignPatterns" */;
@@ -292,6 +351,7 @@
 				955D187324E6CC9D007888EF /* simple-factory */,
 				95E7247524E6DBF30018EADD /* decorator */,
 				95E7248D24E6F40F0018EADD /* proxy */,
+				95E724CD24E8293D0018EADD /* strategy */,
 			);
 		};
 /* End PBXProject section */
@@ -332,6 +392,16 @@
 			files = (
 				95E7249D24E6FB3C0018EADD /* DPWeakProxy.m in Sources */,
 				95E7249124E6F40F0018EADD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95E724CA24E8293D0018EADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E724DA24E82DC60018EADD /* DPPlayerController.m in Sources */,
+				95E724D124E8293D0018EADD /* main.m in Sources */,
+				95E724D724E82D6F0018EADD /* DPPlayerStrategy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +581,22 @@
 			};
 			name = Release;
 		};
+		95E724D224E8293D0018EADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95E724D324E8293D0018EADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -555,6 +641,15 @@
 			buildConfigurations = (
 				95E7249324E6F40F0018EADD /* Debug */,
 				95E7249424E6F40F0018EADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95E724D424E8293D0018EADD /* Build configuration list for PBXNativeTarget "strategy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E724D224E8293D0018EADD /* Debug */,
+				95E724D324E8293D0018EADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
