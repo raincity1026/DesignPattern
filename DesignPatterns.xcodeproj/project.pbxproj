@@ -20,6 +20,9 @@
 		95E724D124E8293D0018EADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E724D024E8293D0018EADD /* main.m */; };
 		95E724D724E82D6F0018EADD /* DPPlayerStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E724D624E82D6F0018EADD /* DPPlayerStrategy.m */; };
 		95E724DA24E82DC60018EADD /* DPPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E724D924E82DC60018EADD /* DPPlayerController.m */; };
+		95E724E224E97B650018EADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E724E124E97B650018EADD /* main.m */; };
+		95E724E824E97B910018EADD /* DPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E724E624E97B910018EADD /* DPOperation.m */; };
+		95E724EE24EAC0380018EADD /* DPOperationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E724ED24EAC0380018EADD /* DPOperationFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +71,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		95E724DD24E97B650018EADD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +110,12 @@
 		95E724D624E82D6F0018EADD /* DPPlayerStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPlayerStrategy.m; sourceTree = "<group>"; };
 		95E724D824E82DC60018EADD /* DPPlayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPlayerController.h; sourceTree = "<group>"; };
 		95E724D924E82DC60018EADD /* DPPlayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPlayerController.m; sourceTree = "<group>"; };
+		95E724DF24E97B650018EADD /* factory-method */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "factory-method"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E724E124E97B650018EADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95E724E624E97B910018EADD /* DPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPOperation.m; sourceTree = "<group>"; };
+		95E724E724E97B910018EADD /* DPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPOperation.h; sourceTree = "<group>"; };
+		95E724EC24EAC0380018EADD /* DPOperationFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPOperationFactory.h; sourceTree = "<group>"; };
+		95E724ED24EAC0380018EADD /* DPOperationFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPOperationFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +154,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95E724DC24E97B650018EADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -147,6 +172,7 @@
 				95E7247724E6DBF30018EADD /* decorator */,
 				95E7248F24E6F40F0018EADD /* proxy */,
 				95E724CF24E8293D0018EADD /* strategy */,
+				95E724E024E97B650018EADD /* factory-method */,
 				955D186724E6CC70007888EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -159,6 +185,7 @@
 				95E7247624E6DBF30018EADD /* decorator */,
 				95E7248E24E6F40F0018EADD /* proxy */,
 				95E724CE24E8293D0018EADD /* strategy */,
+				95E724DF24E97B650018EADD /* factory-method */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +245,18 @@
 				95E724D924E82DC60018EADD /* DPPlayerController.m */,
 			);
 			path = strategy;
+			sourceTree = "<group>";
+		};
+		95E724E024E97B650018EADD /* factory-method */ = {
+			isa = PBXGroup;
+			children = (
+				95E724E724E97B910018EADD /* DPOperation.h */,
+				95E724E624E97B910018EADD /* DPOperation.m */,
+				95E724EC24EAC0380018EADD /* DPOperationFactory.h */,
+				95E724ED24EAC0380018EADD /* DPOperationFactory.m */,
+				95E724E124E97B650018EADD /* main.m */,
+			);
+			path = "factory-method";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +347,23 @@
 			productReference = 95E724CE24E8293D0018EADD /* strategy */;
 			productType = "com.apple.product-type.tool";
 		};
+		95E724DE24E97B650018EADD /* factory-method */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95E724E324E97B650018EADD /* Build configuration list for PBXNativeTarget "factory-method" */;
+			buildPhases = (
+				95E724DB24E97B650018EADD /* Sources */,
+				95E724DC24E97B650018EADD /* Frameworks */,
+				95E724DD24E97B650018EADD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "factory-method";
+			productName = "factory-method";
+			productReference = 95E724DF24E97B650018EADD /* factory-method */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -332,6 +388,9 @@
 					95E724CD24E8293D0018EADD = {
 						CreatedOnToolsVersion = 11.6;
 					};
+					95E724DE24E97B650018EADD = {
+						CreatedOnToolsVersion = 11.6;
+					};
 				};
 			};
 			buildConfigurationList = 955D186124E6CC70007888EF /* Build configuration list for PBXProject "DesignPatterns" */;
@@ -352,6 +411,7 @@
 				95E7247524E6DBF30018EADD /* decorator */,
 				95E7248D24E6F40F0018EADD /* proxy */,
 				95E724CD24E8293D0018EADD /* strategy */,
+				95E724DE24E97B650018EADD /* factory-method */,
 			);
 		};
 /* End PBXProject section */
@@ -402,6 +462,16 @@
 				95E724DA24E82DC60018EADD /* DPPlayerController.m in Sources */,
 				95E724D124E8293D0018EADD /* main.m in Sources */,
 				95E724D724E82D6F0018EADD /* DPPlayerStrategy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95E724DB24E97B650018EADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E724E224E97B650018EADD /* main.m in Sources */,
+				95E724EE24EAC0380018EADD /* DPOperationFactory.m in Sources */,
+				95E724E824E97B910018EADD /* DPOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,6 +667,22 @@
 			};
 			name = Release;
 		};
+		95E724E424E97B650018EADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95E724E524E97B650018EADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -650,6 +736,15 @@
 			buildConfigurations = (
 				95E724D224E8293D0018EADD /* Debug */,
 				95E724D324E8293D0018EADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95E724E324E97B650018EADD /* Build configuration list for PBXNativeTarget "factory-method" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E724E424E97B650018EADD /* Debug */,
+				95E724E524E97B650018EADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
