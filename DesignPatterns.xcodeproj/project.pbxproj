@@ -17,6 +17,11 @@
 		95AD82D024EC2F59005D0615 /* DPLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82CF24EC2F59005D0615 /* DPLogger.m */; };
 		95AD82D324EC2FCA005D0615 /* DPUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82D224EC2FCA005D0615 /* DPUserDefaults.m */; };
 		95AD82D624EC340A005D0615 /* DPLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82D524EC340A005D0615 /* DPLoginManager.m */; };
+		95AD82DE24EC3962005D0615 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82DD24EC3962005D0615 /* main.m */; };
+		95AD82E424EC3BA2005D0615 /* DPComputerBuildDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82E324EC3BA2005D0615 /* DPComputerBuildDirector.m */; };
+		95AD82E824EC3BC0005D0615 /* DPComputer.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82E724EC3BC0005D0615 /* DPComputer.m */; };
+		95AD82EB24EC3C33005D0615 /* DPAppleComputerBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82EA24EC3C33005D0615 /* DPAppleComputerBuilder.m */; };
+		95AD82EE24EC3E31005D0615 /* DPLenovoComputerBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82ED24EC3E31005D0615 /* DPLenovoComputerBuilder.m */; };
 		95E7247924E6DBF30018EADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E7247824E6DBF30018EADD /* main.m */; };
 		95E7248324E6F0220018EADD /* NSString+DPDecoratedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E7248224E6F0220018EADD /* NSString+DPDecoratedString.m */; };
 		95E7248624E6F0800018EADD /* DPStringDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E7248524E6F0800018EADD /* DPStringDecorator.m */; };
@@ -53,6 +58,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		95AD82C224EC2D22005D0615 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		95AD82D924EC3962005D0615 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -138,6 +152,17 @@
 		95AD82D224EC2FCA005D0615 /* DPUserDefaults.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPUserDefaults.m; sourceTree = "<group>"; };
 		95AD82D424EC340A005D0615 /* DPLoginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPLoginManager.h; sourceTree = "<group>"; };
 		95AD82D524EC340A005D0615 /* DPLoginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPLoginManager.m; sourceTree = "<group>"; };
+		95AD82DB24EC3962005D0615 /* builder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = builder; sourceTree = BUILT_PRODUCTS_DIR; };
+		95AD82DD24EC3962005D0615 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95AD82E224EC3BA2005D0615 /* DPComputerBuildDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPComputerBuildDirector.h; sourceTree = "<group>"; };
+		95AD82E324EC3BA2005D0615 /* DPComputerBuildDirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPComputerBuildDirector.m; sourceTree = "<group>"; };
+		95AD82E524EC3BB3005D0615 /* DPComputerBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPComputerBuilder.h; sourceTree = "<group>"; };
+		95AD82E624EC3BC0005D0615 /* DPComputer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPComputer.h; sourceTree = "<group>"; };
+		95AD82E724EC3BC0005D0615 /* DPComputer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPComputer.m; sourceTree = "<group>"; };
+		95AD82E924EC3C33005D0615 /* DPAppleComputerBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPAppleComputerBuilder.h; sourceTree = "<group>"; };
+		95AD82EA24EC3C33005D0615 /* DPAppleComputerBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPAppleComputerBuilder.m; sourceTree = "<group>"; };
+		95AD82EC24EC3E31005D0615 /* DPLenovoComputerBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPLenovoComputerBuilder.h; sourceTree = "<group>"; };
+		95AD82ED24EC3E31005D0615 /* DPLenovoComputerBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPLenovoComputerBuilder.m; sourceTree = "<group>"; };
 		95E7247624E6DBF30018EADD /* decorator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = decorator; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E7247824E6DBF30018EADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95E7248024E6F0000018EADD /* DPDecoratedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPDecoratedString.h; sourceTree = "<group>"; };
@@ -185,6 +210,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		95AD82C124EC2D22005D0615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95AD82D824EC3962005D0615 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -248,6 +280,7 @@
 				95E724F424EACA1E0018EADD /* prototype */,
 				95E724FF24EAE2260018EADD /* template-method */,
 				95AD82C524EC2D22005D0615 /* facade */,
+				95AD82DC24EC3962005D0615 /* builder */,
 				955D186724E6CC70007888EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -264,6 +297,7 @@
 				95E724F324EACA1E0018EADD /* prototype */,
 				95E724FE24EAE2260018EADD /* template-method */,
 				95AD82C424EC2D22005D0615 /* facade */,
+				95AD82DB24EC3962005D0615 /* builder */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -302,6 +336,23 @@
 				95AD82D524EC340A005D0615 /* DPLoginManager.m */,
 			);
 			path = facade;
+			sourceTree = "<group>";
+		};
+		95AD82DC24EC3962005D0615 /* builder */ = {
+			isa = PBXGroup;
+			children = (
+				95AD82DD24EC3962005D0615 /* main.m */,
+				95AD82E624EC3BC0005D0615 /* DPComputer.h */,
+				95AD82E724EC3BC0005D0615 /* DPComputer.m */,
+				95AD82E224EC3BA2005D0615 /* DPComputerBuildDirector.h */,
+				95AD82E324EC3BA2005D0615 /* DPComputerBuildDirector.m */,
+				95AD82E524EC3BB3005D0615 /* DPComputerBuilder.h */,
+				95AD82E924EC3C33005D0615 /* DPAppleComputerBuilder.h */,
+				95AD82EA24EC3C33005D0615 /* DPAppleComputerBuilder.m */,
+				95AD82EC24EC3E31005D0615 /* DPLenovoComputerBuilder.h */,
+				95AD82ED24EC3E31005D0615 /* DPLenovoComputerBuilder.m */,
+			);
+			path = builder;
 			sourceTree = "<group>";
 		};
 		95E7247724E6DBF30018EADD /* decorator */ = {
@@ -425,6 +476,23 @@
 			productReference = 95AD82C424EC2D22005D0615 /* facade */;
 			productType = "com.apple.product-type.tool";
 		};
+		95AD82DA24EC3962005D0615 /* builder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95AD82DF24EC3962005D0615 /* Build configuration list for PBXNativeTarget "builder" */;
+			buildPhases = (
+				95AD82D724EC3962005D0615 /* Sources */,
+				95AD82D824EC3962005D0615 /* Frameworks */,
+				95AD82D924EC3962005D0615 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = builder;
+			productName = builder;
+			productReference = 95AD82DB24EC3962005D0615 /* builder */;
+			productType = "com.apple.product-type.tool";
+		};
 		95E7247524E6DBF30018EADD /* decorator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95E7247C24E6DBF30018EADD /* Build configuration list for PBXNativeTarget "decorator" */;
@@ -545,6 +613,9 @@
 					95AD82C324EC2D22005D0615 = {
 						CreatedOnToolsVersion = 11.6;
 					};
+					95AD82DA24EC3962005D0615 = {
+						CreatedOnToolsVersion = 11.6;
+					};
 					95E7247524E6DBF30018EADD = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -587,6 +658,7 @@
 				95E724F224EACA1E0018EADD /* prototype */,
 				95E724FD24EAE2260018EADD /* template-method */,
 				95AD82C324EC2D22005D0615 /* facade */,
+				95AD82DA24EC3962005D0615 /* builder */,
 			);
 		};
 /* End PBXProject section */
@@ -619,6 +691,18 @@
 				95AD82C724EC2D22005D0615 /* main.m in Sources */,
 				95AD82D324EC2FCA005D0615 /* DPUserDefaults.m in Sources */,
 				95AD82D624EC340A005D0615 /* DPLoginManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95AD82D724EC3962005D0615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95AD82EE24EC3E31005D0615 /* DPLenovoComputerBuilder.m in Sources */,
+				95AD82E824EC3BC0005D0615 /* DPComputer.m in Sources */,
+				95AD82DE24EC3962005D0615 /* main.m in Sources */,
+				95AD82E424EC3BA2005D0615 /* DPComputerBuildDirector.m in Sources */,
+				95AD82EB24EC3C33005D0615 /* DPAppleComputerBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,6 +923,22 @@
 			};
 			name = Release;
 		};
+		95AD82E024EC3962005D0615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95AD82E124EC3962005D0615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		95E7247A24E6DBF30018EADD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -970,6 +1070,15 @@
 			buildConfigurations = (
 				95AD82C924EC2D22005D0615 /* Debug */,
 				95AD82CA24EC2D22005D0615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95AD82DF24EC3962005D0615 /* Build configuration list for PBXNativeTarget "builder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95AD82E024EC3962005D0615 /* Debug */,
+				95AD82E124EC3962005D0615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
