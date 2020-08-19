@@ -10,3 +10,4 @@ Design Pattern Sample Code
 7. template-method(模板方法模式), 父类定义框架流程，子类实现差异化的具体对象插入父类的流程框架中。
 8. facade(外观模式), 把子系统全部包一层，统一一个接口对象给外面使用。
 9. builder(建造者模式), 一个工人，工人有一堆的基础构造能力，一个监工，监工匹配一个工人，监工指挥工人，最后从工人处拿到构造成果对象。
+10. observer(观察者模式), 又称publish/subscribe模式，iOS中的Notification,KVO都属于这种模式。
