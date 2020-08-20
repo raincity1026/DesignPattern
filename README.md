@@ -11,3 +11,5 @@ Design Pattern Sample Code
 8. facade(外观模式), 把子系统全部包一层，统一一个接口对象给外面使用。
 9. builder(建造者模式), 一个工人，工人有一堆的基础构造能力，一个监工，监工匹配一个工人，监工指挥工人，最后从工人处拿到构造成果对象。
 10. observer(观察者模式), 又称publish/subscribe模式，iOS中的Notification,KVO都属于这种模式。
+11. abstract-factory(抽象工厂模式), 跟工厂方法模式一样，只是一个工厂可以生产多个抽象对象而已。
+12. state(状态模式), 跟策略模式类似，不同的是具体的状态感知context, 可以修改context的状态。
