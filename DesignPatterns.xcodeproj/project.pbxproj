@@ -27,6 +27,9 @@
 		95AD830424ED756F005D0615 /* DPObserverManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD830324ED756F005D0615 /* DPObserverManager.m */; };
 		95AD830724ED7C21005D0615 /* DPLoginReferenceUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD830624ED7C21005D0615 /* DPLoginReferenceUI.m */; };
 		95AD830F24ED83B7005D0615 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD830E24ED83B7005D0615 /* main.m */; };
+		95AD831A24ED854B005D0615 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD831924ED854B005D0615 /* main.m */; };
+		95AD832624EECBAF005D0615 /* DPRequestState.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD832524EECBAF005D0615 /* DPRequestState.m */; };
+		95AD832924EECDB1005D0615 /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD832824EECDB1005D0615 /* DPRequest.m */; };
 		95E7247924E6DBF30018EADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E7247824E6DBF30018EADD /* main.m */; };
 		95E7248324E6F0220018EADD /* NSString+DPDecoratedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E7248224E6F0220018EADD /* NSString+DPDecoratedString.m */; };
 		95E7248624E6F0800018EADD /* DPStringDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E7248524E6F0800018EADD /* DPStringDecorator.m */; };
@@ -90,6 +93,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		95AD830A24ED83B7005D0615 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		95AD831524ED854B005D0615 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -198,6 +210,12 @@
 		95AD830624ED7C21005D0615 /* DPLoginReferenceUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPLoginReferenceUI.m; sourceTree = "<group>"; };
 		95AD830C24ED83B7005D0615 /* abstract-factory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "abstract-factory"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AD830E24ED83B7005D0615 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95AD831724ED854B005D0615 /* state */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = state; sourceTree = BUILT_PRODUCTS_DIR; };
+		95AD831924ED854B005D0615 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95AD832424EECBAF005D0615 /* DPRequestState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPRequestState.h; sourceTree = "<group>"; };
+		95AD832524EECBAF005D0615 /* DPRequestState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPRequestState.m; sourceTree = "<group>"; };
+		95AD832724EECDB1005D0615 /* DPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
+		95AD832824EECDB1005D0615 /* DPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
 		95E7247624E6DBF30018EADD /* decorator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = decorator; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E7247824E6DBF30018EADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95E7248024E6F0000018EADD /* DPDecoratedString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPDecoratedString.h; sourceTree = "<group>"; };
@@ -272,6 +290,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95AD831424ED854B005D0615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95E7247324E6DBF30018EADD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +357,7 @@
 				95AD82DC24EC3962005D0615 /* builder */,
 				95AD82F424EC3F79005D0615 /* observer */,
 				95AD830D24ED83B7005D0615 /* abstract-factory */,
+				95AD831824ED854B005D0615 /* state */,
 				955D186724E6CC70007888EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -351,6 +377,7 @@
 				95AD82DB24EC3962005D0615 /* builder */,
 				95AD82F324EC3F79005D0615 /* observer */,
 				95AD830C24ED83B7005D0615 /* abstract-factory */,
+				95AD831724ED854B005D0615 /* state */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -430,6 +457,18 @@
 				95AD830E24ED83B7005D0615 /* main.m */,
 			);
 			path = "abstract-factory";
+			sourceTree = "<group>";
+		};
+		95AD831824ED854B005D0615 /* state */ = {
+			isa = PBXGroup;
+			children = (
+				95AD831924ED854B005D0615 /* main.m */,
+				95AD832424EECBAF005D0615 /* DPRequestState.h */,
+				95AD832524EECBAF005D0615 /* DPRequestState.m */,
+				95AD832724EECDB1005D0615 /* DPRequest.h */,
+				95AD832824EECDB1005D0615 /* DPRequest.m */,
+			);
+			path = state;
 			sourceTree = "<group>";
 		};
 		95E7247724E6DBF30018EADD /* decorator */ = {
@@ -604,6 +643,23 @@
 			productReference = 95AD830C24ED83B7005D0615 /* abstract-factory */;
 			productType = "com.apple.product-type.tool";
 		};
+		95AD831624ED854B005D0615 /* state */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95AD831D24ED854B005D0615 /* Build configuration list for PBXNativeTarget "state" */;
+			buildPhases = (
+				95AD831324ED854B005D0615 /* Sources */,
+				95AD831424ED854B005D0615 /* Frameworks */,
+				95AD831524ED854B005D0615 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = state;
+			productName = state;
+			productReference = 95AD831724ED854B005D0615 /* state */;
+			productType = "com.apple.product-type.tool";
+		};
 		95E7247524E6DBF30018EADD /* decorator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95E7247C24E6DBF30018EADD /* Build configuration list for PBXNativeTarget "decorator" */;
@@ -733,6 +789,9 @@
 					95AD830B24ED83B7005D0615 = {
 						CreatedOnToolsVersion = 11.6;
 					};
+					95AD831624ED854B005D0615 = {
+						CreatedOnToolsVersion = 11.6;
+					};
 					95E7247524E6DBF30018EADD = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -778,6 +837,7 @@
 				95AD82DA24EC3962005D0615 /* builder */,
 				95AD82F224EC3F79005D0615 /* observer */,
 				95AD830B24ED83B7005D0615 /* abstract-factory */,
+				95AD831624ED854B005D0615 /* state */,
 			);
 		};
 /* End PBXProject section */
@@ -841,6 +901,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				95AD830F24ED83B7005D0615 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95AD831324ED854B005D0615 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95AD831A24ED854B005D0615 /* main.m in Sources */,
+				95AD832924EECDB1005D0615 /* DPRequest.m in Sources */,
+				95AD832624EECBAF005D0615 /* DPRequestState.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1109,6 +1179,22 @@
 			};
 			name = Release;
 		};
+		95AD831B24ED854B005D0615 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95AD831C24ED854B005D0615 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		95E7247A24E6DBF30018EADD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1267,6 +1353,15 @@
 			buildConfigurations = (
 				95AD831124ED83B7005D0615 /* Debug */,
 				95AD831224ED83B7005D0615 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95AD831D24ED854B005D0615 /* Build configuration list for PBXNativeTarget "state" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95AD831B24ED854B005D0615 /* Debug */,
+				95AD831C24ED854B005D0615 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
