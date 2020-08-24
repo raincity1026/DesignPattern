@@ -13,3 +13,4 @@ Design Pattern Sample Code
 10. observer(观察者模式), 又称publish/subscribe模式，iOS中的Notification,KVO都属于这种模式。
 11. abstract-factory(抽象工厂模式), 跟工厂方法模式一样，只是一个工厂可以生产多个抽象对象而已。
 12. state(状态模式), 跟策略模式类似，不同的是具体的状态感知context, 可以修改context的状态。
+13. adapter(适配器模式), 俗话说的包一层，包完的对象继承与期望的对象。
