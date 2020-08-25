@@ -12,6 +12,7 @@
 		955D187D24E6CE23007888EF /* DPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 955D187C24E6CE23007888EF /* DPOperation.m */; };
 		955D188024E6CE35007888EF /* DPOperationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 955D187F24E6CE35007888EF /* DPOperationFactory.m */; };
 		9585932C24F41BE300DE70CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9585932B24F41BE300DE70CB /* main.m */; };
+		9585937224F423B500DE70CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9585937124F423B500DE70CB /* main.m */; };
 		95AD82BF24EC2AB8005D0615 /* DPDecorationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82BE24EC2AB8005D0615 /* DPDecorationTemplate.m */; };
 		95AD82C724EC2D22005D0615 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82C624EC2D22005D0615 /* main.m */; };
 		95AD82CD24EC2EFC005D0615 /* DPLoginFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82CC24EC2EFC005D0615 /* DPLoginFacade.m */; };
@@ -67,6 +68,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		9585932724F41BE300DE70CB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9585936D24F423B500DE70CB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -187,6 +197,8 @@
 		955D187F24E6CE35007888EF /* DPOperationFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPOperationFactory.m; sourceTree = "<group>"; };
 		9585932924F41BE300DE70CB /* adapter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = adapter; sourceTree = BUILT_PRODUCTS_DIR; };
 		9585932B24F41BE300DE70CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9585936F24F423B500DE70CB /* memento */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = memento; sourceTree = BUILT_PRODUCTS_DIR; };
+		9585937124F423B500DE70CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		95AD82BD24EC2AB8005D0615 /* DPDecorationTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPDecorationTemplate.h; sourceTree = "<group>"; };
 		95AD82BE24EC2AB8005D0615 /* DPDecorationTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPDecorationTemplate.m; sourceTree = "<group>"; };
 		95AD82C424EC2D22005D0615 /* facade */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = facade; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,6 +287,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9585932624F41BE300DE70CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9585936C24F423B500DE70CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -378,6 +397,7 @@
 				95AD830D24ED83B7005D0615 /* abstract-factory */,
 				95AD831824ED854B005D0615 /* state */,
 				9585932A24F41BE300DE70CB /* adapter */,
+				9585937024F423B500DE70CB /* memento */,
 				955D186724E6CC70007888EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -399,6 +419,7 @@
 				95AD830C24ED83B7005D0615 /* abstract-factory */,
 				95AD831724ED854B005D0615 /* state */,
 				9585932924F41BE300DE70CB /* adapter */,
+				9585936F24F423B500DE70CB /* memento */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -429,6 +450,14 @@
 				9585932B24F41BE300DE70CB /* main.m */,
 			);
 			path = adapter;
+			sourceTree = "<group>";
+		};
+		9585937024F423B500DE70CB /* memento */ = {
+			isa = PBXGroup;
+			children = (
+				9585937124F423B500DE70CB /* main.m */,
+			);
+			path = memento;
 			sourceTree = "<group>";
 		};
 		95AD82C524EC2D22005D0615 /* facade */ = {
@@ -619,6 +648,23 @@
 			name = adapter;
 			productName = adapter;
 			productReference = 9585932924F41BE300DE70CB /* adapter */;
+			productType = "com.apple.product-type.tool";
+		};
+		9585936E24F423B500DE70CB /* memento */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9585937324F423B500DE70CB /* Build configuration list for PBXNativeTarget "memento" */;
+			buildPhases = (
+				9585936B24F423B500DE70CB /* Sources */,
+				9585936C24F423B500DE70CB /* Frameworks */,
+				9585936D24F423B500DE70CB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = memento;
+			productName = memento;
+			productReference = 9585936F24F423B500DE70CB /* memento */;
 			productType = "com.apple.product-type.tool";
 		};
 		95AD82C324EC2D22005D0615 /* facade */ = {
@@ -826,6 +872,9 @@
 					9585932824F41BE300DE70CB = {
 						CreatedOnToolsVersion = 11.6;
 					};
+					9585936E24F423B500DE70CB = {
+						CreatedOnToolsVersion = 11.6;
+					};
 					95AD82C324EC2D22005D0615 = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -888,6 +937,7 @@
 				95AD830B24ED83B7005D0615 /* abstract-factory */,
 				95AD831624ED854B005D0615 /* state */,
 				9585932824F41BE300DE70CB /* adapter */,
+				9585936E24F423B500DE70CB /* memento */,
 			);
 		};
 /* End PBXProject section */
@@ -916,6 +966,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9585932C24F41BE300DE70CB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9585936B24F423B500DE70CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9585937224F423B500DE70CB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1189,6 +1247,22 @@
 			};
 			name = Release;
 		};
+		9585937424F423B500DE70CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9585937524F423B500DE70CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		95AD82C924EC2D22005D0615 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1400,6 +1474,15 @@
 			buildConfigurations = (
 				9585932D24F41BE300DE70CB /* Debug */,
 				9585932E24F41BE300DE70CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9585937324F423B500DE70CB /* Build configuration list for PBXNativeTarget "memento" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9585937424F423B500DE70CB /* Debug */,
+				9585937524F423B500DE70CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
