@@ -17,3 +17,4 @@ Design Pattern Sample Code
 14. momonto(备忘录模式), 一个类可以打包其内部可以恢复的状态值为一个备忘单独存储，有需要的时候可以设置回去一次性恢复。
 15. composite(组合模式), 典型的树状结构应用，俄罗斯套娃。
 16. iterator(迭代器模式), iOS中的NSEnumerator对象就是典型的迭代器模式，如果自己的对象要实现迭代模式就实现NSFastEnumeration协议。
+17. singleton(单例模式), 全局唯一对象，不论通过什么方法拿到的都是一个对象。
