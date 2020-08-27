@@ -16,6 +16,8 @@
 		9585937D24F5789600DE70CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9585937C24F5789600DE70CB /* main.m */; };
 		9585938724F579AF00DE70CB /* DPTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9585938624F579AF00DE70CB /* DPTreeNode.m */; };
 		9585938F24F8123D00DE70CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9585938E24F8123D00DE70CB /* main.m */; };
+		9585939A24F816A000DE70CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9585939924F816A000DE70CB /* main.m */; };
+		958593A024F816B300DE70CB /* DPSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9585939F24F816B300DE70CB /* DPSingleton.m */; };
 		95AD82BF24EC2AB8005D0615 /* DPDecorationTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82BE24EC2AB8005D0615 /* DPDecorationTemplate.m */; };
 		95AD82C724EC2D22005D0615 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82C624EC2D22005D0615 /* main.m */; };
 		95AD82CD24EC2EFC005D0615 /* DPLoginFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = 95AD82CC24EC2EFC005D0615 /* DPLoginFacade.m */; };
@@ -98,6 +100,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		9585938A24F8123D00DE70CB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9585939524F816A000DE70CB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -226,6 +237,10 @@
 		9585938624F579AF00DE70CB /* DPTreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPTreeNode.m; sourceTree = "<group>"; };
 		9585938C24F8123D00DE70CB /* Iterator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Iterator; sourceTree = BUILT_PRODUCTS_DIR; };
 		9585938E24F8123D00DE70CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9585939724F816A000DE70CB /* singleton */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = singleton; sourceTree = BUILT_PRODUCTS_DIR; };
+		9585939924F816A000DE70CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9585939E24F816B300DE70CB /* DPSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSingleton.h; sourceTree = "<group>"; };
+		9585939F24F816B300DE70CB /* DPSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSingleton.m; sourceTree = "<group>"; };
 		95AD82BD24EC2AB8005D0615 /* DPDecorationTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPDecorationTemplate.h; sourceTree = "<group>"; };
 		95AD82BE24EC2AB8005D0615 /* DPDecorationTemplate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPDecorationTemplate.m; sourceTree = "<group>"; };
 		95AD82C424EC2D22005D0615 /* facade */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = facade; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -341,6 +356,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9585939424F816A000DE70CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		95AD82C124EC2D22005D0615 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -441,6 +463,7 @@
 				9585937024F423B500DE70CB /* memento */,
 				9585937B24F5789600DE70CB /* composite */,
 				9585938D24F8123D00DE70CB /* Iterator */,
+				9585939824F816A000DE70CB /* singleton */,
 				955D186724E6CC70007888EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -465,6 +488,7 @@
 				9585936F24F423B500DE70CB /* memento */,
 				9585937A24F5789600DE70CB /* composite */,
 				9585938C24F8123D00DE70CB /* Iterator */,
+				9585939724F816A000DE70CB /* singleton */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -521,6 +545,16 @@
 				9585938E24F8123D00DE70CB /* main.m */,
 			);
 			path = Iterator;
+			sourceTree = "<group>";
+		};
+		9585939824F816A000DE70CB /* singleton */ = {
+			isa = PBXGroup;
+			children = (
+				9585939924F816A000DE70CB /* main.m */,
+				9585939E24F816B300DE70CB /* DPSingleton.h */,
+				9585939F24F816B300DE70CB /* DPSingleton.m */,
+			);
+			path = singleton;
 			sourceTree = "<group>";
 		};
 		95AD82C524EC2D22005D0615 /* facade */ = {
@@ -764,6 +798,23 @@
 			productReference = 9585938C24F8123D00DE70CB /* Iterator */;
 			productType = "com.apple.product-type.tool";
 		};
+		9585939624F816A000DE70CB /* singleton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9585939B24F816A000DE70CB /* Build configuration list for PBXNativeTarget "singleton" */;
+			buildPhases = (
+				9585939324F816A000DE70CB /* Sources */,
+				9585939424F816A000DE70CB /* Frameworks */,
+				9585939524F816A000DE70CB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = singleton;
+			productName = singleton;
+			productReference = 9585939724F816A000DE70CB /* singleton */;
+			productType = "com.apple.product-type.tool";
+		};
 		95AD82C324EC2D22005D0615 /* facade */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95AD82C824EC2D22005D0615 /* Build configuration list for PBXNativeTarget "facade" */;
@@ -978,6 +1029,9 @@
 					9585938B24F8123D00DE70CB = {
 						CreatedOnToolsVersion = 11.6;
 					};
+					9585939624F816A000DE70CB = {
+						CreatedOnToolsVersion = 11.6;
+					};
 					95AD82C324EC2D22005D0615 = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -1043,6 +1097,7 @@
 				9585936E24F423B500DE70CB /* memento */,
 				9585937924F5789600DE70CB /* composite */,
 				9585938B24F8123D00DE70CB /* Iterator */,
+				9585939624F816A000DE70CB /* singleton */,
 			);
 		};
 /* End PBXProject section */
@@ -1096,6 +1151,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9585938F24F8123D00DE70CB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9585939324F816A000DE70CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9585939A24F816A000DE70CB /* main.m in Sources */,
+				958593A024F816B300DE70CB /* DPSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1417,6 +1481,22 @@
 			};
 			name = Release;
 		};
+		9585939C24F816A000DE70CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9585939D24F816A000DE70CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		95AD82C924EC2D22005D0615 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1655,6 +1735,15 @@
 			buildConfigurations = (
 				9585939024F8123D00DE70CB /* Debug */,
 				9585939124F8123D00DE70CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9585939B24F816A000DE70CB /* Build configuration list for PBXNativeTarget "singleton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9585939C24F816A000DE70CB /* Debug */,
+				9585939D24F816A000DE70CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
