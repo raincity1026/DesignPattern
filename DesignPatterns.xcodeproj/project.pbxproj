@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		953126CF24F9458400C952EF /* DPPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 953126CE24F9458400C952EF /* DPPhone.m */; };
 		953126D224F9459E00C952EF /* DPApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 953126D124F9459E00C952EF /* DPApp.m */; };
+		953126DA24F949CC00C952EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 953126D924F949CC00C952EF /* main.m */; };
+		953126E024F94AEF00C952EF /* DPCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 953126DF24F94AEF00C952EF /* DPCommand.m */; };
+		953126E624F9692800C952EF /* DPPrintCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 953126E524F9692800C952EF /* DPPrintCommand.m */; };
+		953126E924F9695200C952EF /* DPEpsonPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 953126E824F9695200C952EF /* DPEpsonPrinter.m */; };
 		955D186A24E6CC70007888EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 955D186924E6CC70007888EF /* main.m */; };
 		955D187724E6CC9D007888EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 955D187624E6CC9D007888EF /* main.m */; };
 		955D187D24E6CE23007888EF /* DPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 955D187C24E6CE23007888EF /* DPOperation.m */; };
@@ -57,6 +61,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		953126D524F949CC00C952EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		955D186424E6CC70007888EF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,6 +248,14 @@
 		953126CE24F9458400C952EF /* DPPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPhone.m; sourceTree = "<group>"; };
 		953126D024F9459E00C952EF /* DPApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPApp.h; sourceTree = "<group>"; };
 		953126D124F9459E00C952EF /* DPApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPApp.m; sourceTree = "<group>"; };
+		953126D724F949CC00C952EF /* command */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = command; sourceTree = BUILT_PRODUCTS_DIR; };
+		953126D924F949CC00C952EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		953126DE24F94AEF00C952EF /* DPCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPCommand.h; sourceTree = "<group>"; };
+		953126DF24F94AEF00C952EF /* DPCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPCommand.m; sourceTree = "<group>"; };
+		953126E424F9692800C952EF /* DPPrintCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPrintCommand.h; sourceTree = "<group>"; };
+		953126E524F9692800C952EF /* DPPrintCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPrintCommand.m; sourceTree = "<group>"; };
+		953126E724F9695200C952EF /* DPEpsonPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPEpsonPrinter.h; sourceTree = "<group>"; };
+		953126E824F9695200C952EF /* DPEpsonPrinter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPEpsonPrinter.m; sourceTree = "<group>"; };
 		955D186624E6CC70007888EF /* DesignPatterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPatterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		955D186924E6CC70007888EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		955D187424E6CC9D007888EF /* simple-factory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "simple-factory"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -332,6 +353,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		953126D424F949CC00C952EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		955D186324E6CC70007888EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,6 +496,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		953126D824F949CC00C952EF /* command */ = {
+			isa = PBXGroup;
+			children = (
+				953126D924F949CC00C952EF /* main.m */,
+				953126DE24F94AEF00C952EF /* DPCommand.h */,
+				953126DF24F94AEF00C952EF /* DPCommand.m */,
+				953126E424F9692800C952EF /* DPPrintCommand.h */,
+				953126E524F9692800C952EF /* DPPrintCommand.m */,
+				953126E724F9695200C952EF /* DPEpsonPrinter.h */,
+				953126E824F9695200C952EF /* DPEpsonPrinter.m */,
+			);
+			path = command;
+			sourceTree = "<group>";
+		};
 		955D185D24E6CC70007888EF = {
 			isa = PBXGroup;
 			children = (
@@ -490,6 +532,7 @@
 				9585938D24F8123D00DE70CB /* Iterator */,
 				9585939824F816A000DE70CB /* singleton */,
 				958593A624F81B4500DE70CB /* bridge */,
+				953126D824F949CC00C952EF /* command */,
 				955D186724E6CC70007888EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -516,6 +559,7 @@
 				9585938C24F8123D00DE70CB /* Iterator */,
 				9585939724F816A000DE70CB /* singleton */,
 				958593A524F81B4500DE70CB /* bridge */,
+				953126D724F949CC00C952EF /* command */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -735,6 +779,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		953126D624F949CC00C952EF /* command */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 953126DB24F949CC00C952EF /* Build configuration list for PBXNativeTarget "command" */;
+			buildPhases = (
+				953126D324F949CC00C952EF /* Sources */,
+				953126D424F949CC00C952EF /* Frameworks */,
+				953126D524F949CC00C952EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = command;
+			productName = command;
+			productReference = 953126D724F949CC00C952EF /* command */;
+			productType = "com.apple.product-type.tool";
+		};
 		955D186524E6CC70007888EF /* DesignPatterns */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 955D186D24E6CC70007888EF /* Build configuration list for PBXNativeTarget "DesignPatterns" */;
@@ -1067,6 +1128,9 @@
 				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = raincity;
 				TargetAttributes = {
+					953126D624F949CC00C952EF = {
+						CreatedOnToolsVersion = 11.6;
+					};
 					955D186524E6CC70007888EF = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -1158,11 +1222,23 @@
 				9585938B24F8123D00DE70CB /* Iterator */,
 				9585939624F816A000DE70CB /* singleton */,
 				958593A424F81B4500DE70CB /* bridge */,
+				953126D624F949CC00C952EF /* command */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		953126D324F949CC00C952EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953126E924F9695200C952EF /* DPEpsonPrinter.m in Sources */,
+				953126E624F9692800C952EF /* DPPrintCommand.m in Sources */,
+				953126DA24F949CC00C952EF /* main.m in Sources */,
+				953126E024F94AEF00C952EF /* DPCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		955D186224E6CC70007888EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1346,6 +1422,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		953126DC24F949CC00C952EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		953126DD24F949CC00C952EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		955D186B24E6CC70007888EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1762,6 +1854,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		953126DB24F949CC00C952EF /* Build configuration list for PBXNativeTarget "command" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				953126DC24F949CC00C952EF /* Debug */,
+				953126DD24F949CC00C952EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		955D186124E6CC70007888EF /* Build configuration list for PBXProject "DesignPatterns" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
