@@ -19,6 +19,9 @@
 		9531270524FC050300C952EF /* DPPluginContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9531270424FC050300C952EF /* DPPluginContext.m */; };
 		9531270824FC07E100C952EF /* DPDownloadPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9531270724FC07E100C952EF /* DPDownloadPlugin.m */; };
 		9531270B24FC07ED00C952EF /* DPPlayPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9531270A24FC07ED00C952EF /* DPPlayPlugin.m */; };
+		9531271324FE997E00C952EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9531271224FE997E00C952EF /* main.m */; };
+		9531271924FE9ADA00C952EF /* DPPlayerFlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9531271824FE9ADA00C952EF /* DPPlayerFlyweightFactory.m */; };
+		9531271C24FE9AF700C952EF /* DPPlayerFlyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9531271B24FE9AF700C952EF /* DPPlayerFlyweight.m */; };
 		955D186A24E6CC70007888EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 955D186924E6CC70007888EF /* main.m */; };
 		955D187724E6CC9D007888EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 955D187624E6CC9D007888EF /* main.m */; };
 		955D187D24E6CE23007888EF /* DPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 955D187C24E6CE23007888EF /* DPOperation.m */; };
@@ -86,6 +89,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		953126F724FAB38700C952EF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9531270E24FE997E00C952EF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -292,6 +304,12 @@
 		9531270724FC07E100C952EF /* DPDownloadPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPDownloadPlugin.m; sourceTree = "<group>"; };
 		9531270924FC07ED00C952EF /* DPPlayPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPlayPlugin.h; sourceTree = "<group>"; };
 		9531270A24FC07ED00C952EF /* DPPlayPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPlayPlugin.m; sourceTree = "<group>"; };
+		9531271024FE997E00C952EF /* flyweight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = flyweight; sourceTree = BUILT_PRODUCTS_DIR; };
+		9531271224FE997E00C952EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9531271724FE9ADA00C952EF /* DPPlayerFlyweightFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPlayerFlyweightFactory.h; sourceTree = "<group>"; };
+		9531271824FE9ADA00C952EF /* DPPlayerFlyweightFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPlayerFlyweightFactory.m; sourceTree = "<group>"; };
+		9531271A24FE9AF700C952EF /* DPPlayerFlyweight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPlayerFlyweight.h; sourceTree = "<group>"; };
+		9531271B24FE9AF700C952EF /* DPPlayerFlyweight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPPlayerFlyweight.m; sourceTree = "<group>"; };
 		955D186624E6CC70007888EF /* DesignPatterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPatterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		955D186924E6CC70007888EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		955D187424E6CC9D007888EF /* simple-factory */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "simple-factory"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -404,6 +422,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		953126F624FAB38700C952EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9531270D24FE997E00C952EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -584,6 +609,18 @@
 			path = mediator;
 			sourceTree = "<group>";
 		};
+		9531271124FE997E00C952EF /* flyweight */ = {
+			isa = PBXGroup;
+			children = (
+				9531271224FE997E00C952EF /* main.m */,
+				9531271A24FE9AF700C952EF /* DPPlayerFlyweight.h */,
+				9531271B24FE9AF700C952EF /* DPPlayerFlyweight.m */,
+				9531271724FE9ADA00C952EF /* DPPlayerFlyweightFactory.h */,
+				9531271824FE9ADA00C952EF /* DPPlayerFlyweightFactory.m */,
+			);
+			path = flyweight;
+			sourceTree = "<group>";
+		};
 		955D185D24E6CC70007888EF = {
 			isa = PBXGroup;
 			children = (
@@ -609,6 +646,7 @@
 				953126D824F949CC00C952EF /* command */,
 				953126EF24FAA36500C952EF /* chain-of-responsibility */,
 				953126FA24FAB38700C952EF /* mediator */,
+				9531271124FE997E00C952EF /* flyweight */,
 				955D186724E6CC70007888EF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -638,6 +676,7 @@
 				953126D724F949CC00C952EF /* command */,
 				953126EE24FAA36500C952EF /* chain-of-responsibility */,
 				953126F924FAB38700C952EF /* mediator */,
+				9531271024FE997E00C952EF /* flyweight */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -906,6 +945,23 @@
 			name = mediator;
 			productName = mediator;
 			productReference = 953126F924FAB38700C952EF /* mediator */;
+			productType = "com.apple.product-type.tool";
+		};
+		9531270F24FE997E00C952EF /* flyweight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9531271624FE997E00C952EF /* Build configuration list for PBXNativeTarget "flyweight" */;
+			buildPhases = (
+				9531270C24FE997E00C952EF /* Sources */,
+				9531270D24FE997E00C952EF /* Frameworks */,
+				9531270E24FE997E00C952EF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = flyweight;
+			productName = flyweight;
+			productReference = 9531271024FE997E00C952EF /* flyweight */;
 			productType = "com.apple.product-type.tool";
 		};
 		955D186524E6CC70007888EF /* DesignPatterns */ = {
@@ -1249,6 +1305,9 @@
 					953126F824FAB38700C952EF = {
 						CreatedOnToolsVersion = 11.6;
 					};
+					9531270F24FE997E00C952EF = {
+						CreatedOnToolsVersion = 11.6;
+					};
 					955D186524E6CC70007888EF = {
 						CreatedOnToolsVersion = 11.6;
 					};
@@ -1343,6 +1402,7 @@
 				953126D624F949CC00C952EF /* command */,
 				953126ED24FAA36500C952EF /* chain-of-responsibility */,
 				953126F824FAB38700C952EF /* mediator */,
+				9531270F24FE997E00C952EF /* flyweight */,
 			);
 		};
 /* End PBXProject section */
@@ -1376,6 +1436,16 @@
 				9531270B24FC07ED00C952EF /* DPPlayPlugin.m in Sources */,
 				953126FC24FAB38700C952EF /* main.m in Sources */,
 				9531270524FC050300C952EF /* DPPluginContext.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9531270C24FE997E00C952EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9531271C24FE9AF700C952EF /* DPPlayerFlyweight.m in Sources */,
+				9531271324FE997E00C952EF /* main.m in Sources */,
+				9531271924FE9ADA00C952EF /* DPPlayerFlyweightFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1603,6 +1673,22 @@
 			name = Debug;
 		};
 		953126FF24FAB38700C952EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9531271424FE997E00C952EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9531271524FE997E00C952EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -2049,6 +2135,15 @@
 			buildConfigurations = (
 				953126FE24FAB38700C952EF /* Debug */,
 				953126FF24FAB38700C952EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9531271624FE997E00C952EF /* Build configuration list for PBXNativeTarget "flyweight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9531271424FE997E00C952EF /* Debug */,
+				9531271524FE997E00C952EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
